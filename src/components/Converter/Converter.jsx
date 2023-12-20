@@ -28,7 +28,7 @@ function Converter() {
                     <p>Ingrisi in tixti:</p>
                     <button onClick={handleConvert}>Cimbirtir</button>
                 </div>
-                <textarea value={input} onChange={handleChange} name="tixti" id="" placeholder='tixti' sentences="true"></textarea>
+                <textarea value={input} onChange={handleChange} name="tixti" id="" placeholder='tixti'></textarea>
             </div>
             <div className={styles.resultsContainer}>
                 <p>Risiltidi:</p>

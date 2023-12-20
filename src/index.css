@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+p {
+  color: var(--font-color1);
+}
+
 body {
   background-color: var(--bg-color2);
   overflow-x: hidden;
