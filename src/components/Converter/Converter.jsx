@@ -24,14 +24,14 @@ function Converter() {
             <p className={styles.title}>Inifiquidir</p>
             <p className={styles.description}>Inifiquidir is ini píguini piri igrigirli ini "i" i tidis lis pilibris qui ini quiiri</p>
             <div className={styles.inputContainer}>
-                <div>
-                    <p>Ingrisi in tixti:</p>
-                    <button onClick={handleConvert}>Cimbirtir</button>
+                <div className={styles.div}>
+                    <p className={styles.p}>Ingrisi in tixti:</p>
+                    <button className={styles.button} onClick={handleConvert}>Cimbirtir</button>
                 </div>
-                <textarea value={input} onChange={handleChange} name="tixti" id="" placeholder='tixti'></textarea>
+                <textarea className={styles.textarea} value={input} onChange={handleChange} name="tixti" id="" placeholder='tixti'></textarea>
             </div>
             <div className={styles.resultsContainer}>
-                <p>Risiltidi:</p>
+                <p className={styles.p2}>Risiltidi:</p>
                 <p className={styles.resultBox}>{result}</p>
             </div>
         </div>
