@@ -1,0 +1,98 @@
+.mainView {
+    position: relative;
+    overflow: hidden;
+    /* background-color: white; */
+    background-color: var(--bg-color2);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+
+    & p{
+        color: var(--font-color1);
+    }
+}
+
+.title {
+    font-size: 35px;
+    margin: 20px auto 5px auto;
+}
+
+.description {
+    min-height: 50px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 auto 10px auto;
+}
+
+.inputContainer {
+    width: 100%;
+    max-width: 600px;
+    min-height: 200px;
+    padding: 10px 20px 20px 20px;
+    margin: 10px auto 20px auto;
+    border-radius: 20px;
+    background-color: var(--bg-color1);
+
+    & div {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 0;
+
+        & p {
+            padding: 0 10px 10px 10px;
+            font-size: 15px;
+        }
+
+        & button {
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            font-size: 15px;
+            font-weight: 400;
+            color: white;
+            cursor: pointer;
+            background-color: var(--bg-color2);
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+
+    & textarea {
+        font-size: 15px;
+        padding: 5px;
+        border: 2px solid var(--bg-color1);
+        resize: none;
+        width: 100%;
+        min-height: 200px;
+    }
+}
+
+.resultsContainer {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    min-height: 200px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+
+    & p {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    & .resultBox {
+        overflow-y: scroll;
+        border: 1px solid white;
+        border-radius: 20px;
+        word-wrap: break-word;
+        color: white;
+        width: 100%;
+        flex: 1;
+        font-size: 16px;
+    }
+}
